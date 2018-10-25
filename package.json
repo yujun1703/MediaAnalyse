@@ -1,0 +1,11 @@
+{
+  "name": "WooGeen-Analytics",
+  "version": "4.0",
+  "description": "Intel CS for WebRTC Analytics Server",
+  "engine": {
+    "node": "8.11.4"
+  },
+  "dependencies": {
+    "spdy": "^3.4.7"
+  }
+}

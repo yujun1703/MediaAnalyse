@@ -1,0 +1,39 @@
+<html>
+
+  <head>
+    <title>Intel&reg; Collaboration Suite for WebRTC Conference Sample</title>
+    <!--<link rel="stylesheet" type="text/css" href="https://www.intel.com/etc/designs/ver/6.8.288/intel/us/en/Fonts/intel-clear-latin.woff2" />-->
+  </head>
+
+  <body>
+    <div style="width:640px" class="local">
+      <video playsinline muted autoplay></video>
+    </div>
+    <div id="resolutions"><span>Try a different resolution:&nbsp;</span></div>
+    <div class="remote">
+      <video playsinline muted autoplay></video>
+    </div>
+    <div style="width:640px" class="remote">
+      <video plansinline muted autoplay></video>
+    </div>
+    <script language="JavaScript">
+      RTCPeerConnection.prototype.addTransceiver = undefined;
+    </script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/socket.io.js" type="text/javascript"></script>
+    <script src="scripts/adapter.js" type="text/javascript"></script>
+    <script src="scripts/ics.js" type="text/javascript"></script>
+    <script src="scripts/index.js" type="text/javascript"></script>
+    <script language="JavaScript">
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'),
+          results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(
+          /\+/g, ' '));
+      }
+      runSocketIOSample();
+    </script>
+  </body>
+
+</html>

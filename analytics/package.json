@@ -1,0 +1,16 @@
+{
+  "name": "Analytics-Portal",
+  "version": "1.0.0",
+  "dependencies": {
+    "amqp": "*",
+    "body-parser": "*",
+    "errorhandler": "",
+    "express": "*",
+    "log4js": "^1.1.1",
+    "md5": "^2.2.1",
+    "morgan": "",
+    "node-getopt": "*",
+    "spdy": "",
+    "toml": "*"
+  }
+}

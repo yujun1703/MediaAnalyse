@@ -1,0 +1,1 @@
+Before you execute the photo_taker and preprocess_tool, make sure you go to current directory and export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH

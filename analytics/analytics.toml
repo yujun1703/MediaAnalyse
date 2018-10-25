@@ -1,0 +1,17 @@
+[agent]
+#Max simulatenous analytics that agent can run
+maxProcesses = 4 #default: 4
+
+[rabbit]
+host = "localhost" #default: "localhost"
+port = 5672 #default: 5672
+
+#########################################################################################
+[video]
+#Analytics engine currently ignore the hardwareAccelerated settings
+hardwareAccelerated = false
+
+[analytics]
+port = 9901 #default 9901
+secure_port = 9904 #default 9904
+
